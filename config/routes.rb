@@ -1,12 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'homes#index'
+  authenticated :user do
+    root to: 'categories#index', as: :authenticated_root
+  end
 
-  resources :expenses
-  resources :groups
-  resources :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  root "homes#index"
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :groups do 
+    resources :expenses 
+  end
 end
