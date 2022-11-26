@@ -52,7 +52,7 @@ Budget- App is a Ruby on Rails mobile web application that allows users to keep 
 
 ## Live Demo will be available ..()i
 
-[Live Demo Link]()
+[Live Demo Link](https://budget-app-ovsg.onrender.com/)
 
 ## Getting Started
 -To get a local copy up and running follow these simple example steps.
